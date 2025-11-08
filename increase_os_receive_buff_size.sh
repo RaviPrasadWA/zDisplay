@@ -1,0 +1,2 @@
+sysctl -w net.core.rmem_max=67108864
+sysctl -w net.core.rmem_default=67108864
