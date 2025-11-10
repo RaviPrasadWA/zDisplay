@@ -1,3 +1,4 @@
+# zDisplay this is to display the zFPV stream
 #!/bin/bash
 # Usage: ./push_to_pi.sh [pi_user@pi_host]
 
@@ -27,6 +28,20 @@ scp StringHelper.hpp \
     rtpreceiver.h \
     ParseRTP.h \
     increase_os_receive_buff_size.sh \
+    avcodec.cpp \
+    avcodec.h \
+    texturerenderer.h \
+    video_ratio_helper.hpp \
+    texturerenderer.cpp \
+    color_helper.h \
+    QSGVideoTextureItem.cpp \
+    QSGVideoTextureItem.h \
+    qrenderstats.h \
+    qrenderstats.cpp \
+    qopenhd.h \
+    qopenhd.cpp \
+    mousehelper.h \
+    mousehelper.cpp \
     build_cmake.sh "$PI_ADDR:$PI_DIR/"
 
-scp -r h264 nalu lqtutils_master "$PI_ADDR:$PI_DIR/"
+scp -r h264 nalu lqtutils_master gl qml "$PI_ADDR:$PI_DIR/"

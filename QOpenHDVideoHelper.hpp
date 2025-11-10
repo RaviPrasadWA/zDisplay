@@ -101,7 +101,7 @@ struct VideoStreamConfigXX{
     // the video codec the received rtp data should be intepreted as.
     VideoCodec video_codec=VideoCodecH264;
     // force sw decoding (only makes a difference if on this platform/compile-time configuration a HW decoder is chosen by default)
-    bool enable_software_video_decoder=false;
+    bool enable_software_video_decoder=true;
 
     // 2 configs are equal if all members are exactly the same.
     bool operator==(const VideoStreamConfigXX &o) const {
